@@ -113,6 +113,7 @@ video{
 width: 100%;
 margin-top: 4vw;
 position: relative;
+/* background-color:  #EFEAE3; */
 }
 
 /* Shape Animation  Styling */
@@ -203,4 +204,184 @@ animation-fill-mode: forwards;
     to{
         transform: translate(40%,30%); 
     }
+}
+
+/* Styling Page 2 Of the Clone */
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+position: relative;
+background-color: #EFEAE3;
+}
+
+#sliding-text{
+    margin: 14vh 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    background-color:  #EFEAE3;
+ 
+}
+
+#sliding-text::-webkit-scrollbar{
+   display: none;
+}
+.cont{
+white-space: nowrap;
+display: inline-block;
+animation-name: slide;
+animation-duration:13s ;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+
+}
+
+#circle-icon{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: #fe340b;
+display: inline-block;
+margin: 1vh 3vh;
+}
+
+.cont h1{
+    font-size: 15vh;
+    display: inline-block;
+}
+
+/* Sliding text animation  */
+@keyframes slide {
+    from{
+transform: translate(0%);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+/* Page 2 bottom part styling */
+
+#page2-bottom{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding: 4vw;
+}
+
+#bottom-text{
+width: 60%;
+margin-bottom: 14vw;
+z-index: 9;
+}
+#bottom-text h1{
+font-size:3.5vw;
+line-height: 4vw;
+}
+#bottom-image{
+    width: 17%;
+  
+}
+#bottom-image p{
+  font-weight: 200;
+  margin-top: 3vw;
+}
+#bottom-image img{
+width: 100%;
+height: 100%;
+border-radius: 4%;
+}
+
+/* Second Animation */
+
+#moving-circle{
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(to top right,#fe340b,rgb(252, 61, 13));
+    top: 50%;
+    left: 26vw;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation-name: m-c;
+animation-duration:5s ;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+animation-direction: alternate;
+}
+
+
+@keyframes m-c {
+    from{
+transform: translate(20%,-10%)skew(10deg);
+    }
+    to{
+transform: translate(-10%,14%)skew(-12deg);
+    }
+}
+
+/* Footere Styling */
+#page2-footer{
+    bottom: 30vw;
+    display: flex;
+padding: 0 1.5vw;
+gap: .5vw;
+}
+#page2-footer img{
+width: 7px;
+height: 7px;
+margin-top: .25vw;
+    
+}
+#page2-footer p{
+font-size: .8vw;
+  
+}
+
+/* Page 3 styling */
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+padding: 3vw 0;
+background-color: #EFEAE3;
+
+/* display: flex; */
+
+}
+
+.elem{
+height:9vw ;
+   width: 100%;
+padding-top: 3vw;
+   position: relative;
+display: flex;
+align-items: center;
+border-bottom: 1px solid rgb(70, 57, 57);
+overflow:hidden;
+}
+.elem h2{
+color: black;
+font-size: 4vw;
+padding-left: 1.5vw;
+z-index: 9;
+}
+.elem .overlay{
+width: 100%;
+height: 100%;
+background-color: orangered;
+position: absolute;
+top: -100%;
+
+
+transition: all ease .3s;
+}
+
+.elem:hover .overlay{
+top: 0%;
+
 }
