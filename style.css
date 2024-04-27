@@ -9,11 +9,19 @@
     box-sizing: border-box;
     font-family:Neu ;
 }
+
 html,body{
     height: 100%;
-    width: 100%;
-    
+    width: 100%; 
 }
+
+/* #main{ */
+position: relative;
+  z-index: 10;
+background-color: black;
+}
+
+/* Page 1 Styling */
 #page1{
 min-height: 100vh;
 width: 100%;
@@ -385,3 +393,143 @@ transition: all ease .3s;
 top: 0%;
 
 }
+
+/* Floating Image Styling */
+
+#fixed-image{
+    height: 65%;
+    width: 23%;
+    background-color: red;
+    position: fixed;
+    z-index: 99;
+    top: 17%;
+    left: 52%;
+    border-radius: 7%;
+    display: none;
+    background-position: center;
+    background-size: cover;
+}
+.data-image{
+    display: block;
+}
+
+
+/* Page 4 Styling */
+
+#page4{
+    height: 130vh;
+    width: 100%;
+    padding-top: 15vw;
+   display: flex;
+
+   justify-content: center;
+}
+
+#box{
+    height: 120vh;
+    width: 93%;
+ background-color: black;
+ border-radius: 24px;
+display: flex;
+justify-content: space-between;
+}
+
+#left-box{
+display: flex;
+justify-content: center;
+    width: 45%;
+}
+
+
+#right-box{
+height: 100%;
+width: 55%;
+
+}
+#right-box img{
+height: 100%;
+width: 100%;
+border-radius: 24px;
+
+}
+
+#writting{
+    width: 60%;
+    padding-top: 12vw;
+}
+
+#left-box #writting h1{
+    color: white;
+    font-size:5vw;
+ line-height: 5vw;
+ padding-left: 1.5vw;
+ border-left: 2px solid white;
+ 
+ }
+#left-box #writting .headingp1 h1{
+    color: white;
+    font-size:5vw;
+ padding-left: 1.5vw;
+ border-left: 4px solid rgb(217, 56, 20);
+ 
+ }
+
+#left-box #writting .headingp2 h1{
+    color: #504A45;
+    font-size:5vw;
+ 
+ padding-left: 1.5vw;
+ border-left: 4px solid#504A45;
+ 
+ }
+
+ #left-box #writting p{
+
+    margin-top: 5vw;
+    color:  #EEE9E2;
+    line-height: 1.5vw;
+ }
+
+ #menu{
+   padding-top: 5vw;
+   display: flex;
+  
+ }
+
+ #menu h4{
+    margin-left: 4vw;
+    border: 1px solid #BFBBB6;
+    padding: 1vw 1.5vw;
+    border-radius: 50px;
+font-weight: 100;
+ }
+
+/* Page 5 Styling */
+
+#page5{
+
+    height: 100vh;
+    width: 100%;
+    /* background-color: #de9d43; */
+}
+
+/* Footer Styling */
+
+/* #footer{
+display: flex;
+position: fixed;
+bottom: 0;
+height: 100%;
+width: 100%;
+z-index: 1;
+background-color: black;
+align-items: center;
+justify-content: center;
+
+
+}
+
+#footer  h1{
+    color: rgb(255, 255, 255);
+    font-size:20vh ;
+} */
