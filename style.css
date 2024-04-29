@@ -15,17 +15,18 @@ html,body{
     width: 100%; 
 }
 
-/* #main{ */
-position: relative;
-  z-index: 10;
-background-color: black;
+#main{
+/* position: relative;
+  z-index: 10; */
+/* background-color: black; */
 }
 
 /* Page 1 Styling */
+
 #page1{
 min-height: 100vh;
 width: 100%;
-background-color: #EFEAE3;
+background-color:#EFEAE3;
 padding: 0px 1vw;
 
 }
@@ -58,6 +59,7 @@ overflow: hidden;
 font-weight: 350;
 
 }
+
 #navp2 h4::after{
     content: "";
 position: absolute;
@@ -70,10 +72,10 @@ border-radius: 50px;
 transition: all ease 0.3s;
 
 }
+
 #navp2 h4:hover::after{
     left: 0;
     bottom: 0;
-
 
 }
 #navp2 h4 a{
@@ -116,12 +118,22 @@ text-align: right;
 
 
 /* Added  first Video after center elements */
-video{
-    border-radius: 30px;
-width: 100%;
-margin-top: 4vw;
+#video{
+
+
+padding-top: 4.5vw;
 position: relative;
-/* background-color:  #EFEAE3; */
+padding-right: 1.5vw;
+padding-left: 1.5vw;
+
+
+}
+
+video{
+
+    border-radius: 32px;
+    width: 100%;
+    
 }
 
 /* Shape Animation  Styling */
@@ -221,13 +233,17 @@ animation-fill-mode: forwards;
     width: 100%;
 position: relative;
 background-color: #EFEAE3;
+padding-top:14vh ;
+padding-bottom: 10vh;
 }
 
 #sliding-text{
-    margin: 14vh 0;
+   
     white-space: nowrap;
     overflow-x: auto;
     background-color:  #EFEAE3;
+    margin-top: 3.5vw;
+    margin-bottom: 10vw;
  
 }
 
@@ -308,6 +324,7 @@ border-radius: 4%;
 #moving-circle{
     height: 30vw;
     width: 30vw;
+  
     background: linear-gradient(to top right,#fe340b,rgb(252, 61, 13));
     top: 50%;
     left: 26vw;
@@ -338,6 +355,7 @@ transform: translate(-10%,14%)skew(-12deg);
     display: flex;
 padding: 0 1.5vw;
 gap: .5vw;
+
 }
 #page2-footer img{
 width: 7px;
@@ -355,7 +373,7 @@ font-size: .8vw;
 #page3{
     min-height: 100vh;
     width: 100%;
-padding: 3vw 0;
+
 background-color: #EFEAE3;
 
 /* display: flex; */
@@ -414,14 +432,66 @@ top: 0%;
 }
 
 
+/* All  projects Small Menu */
+
+#menu{
+    padding-top: 5vw;
+    display: flex;
+   
+  }
+ 
+  #menu a{
+     text-decoration: none;
+     border: 1px solid #BFBBB6;
+     border-radius   : 50px;
+     margin-left: 4vw;
+     padding: 1vw 2vw;
+ 
+     position: relative;
+ overflow: hidden;
+  }
+ 
+  #menu h4{
+    color: black;
+ font-weight: 100;
+ 
+  }
+ 
+  #menu a::after{
+     content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-color: rgb(0, 0, 0);
+ left: 0;
+ bottom: -100%;
+ border-radius: 50px;
+ transition: all ease 0.3s;
+ 
+ }
+ 
+ #menu a:hover::after{
+     left: 0;
+     bottom: 0;
+ 
+ }
+ 
+ #menu a:hover h4{
+   
+    color: white;
+ position: relative;
+ z-index: 9;
+ }
+ 
+
 /* Page 4 Styling */
 
 #page4{
-    height: 130vh;
+    height: 150vh;
     width: 100%;
-    padding-top: 15vw;
+    padding-top: 9vw;
    display: flex;
-
+background-color:#EFEAE3 ;
    justify-content: center;
 }
 
@@ -484,25 +554,15 @@ border-radius: 24px;
  }
 
  #left-box #writting p{
-
-    margin-top: 5vw;
+font-size: small;
+    margin-top: 4vw;
     color:  #EEE9E2;
     line-height: 1.5vw;
  }
 
- #menu{
-   padding-top: 5vw;
-   display: flex;
-  
- }
 
- #menu h4{
-    margin-left: 4vw;
-    border: 1px solid #BFBBB6;
-    padding: 1vw 1.5vw;
-    border-radius: 50px;
-font-weight: 100;
- }
+
+ 
 
 /* Page 5 Styling */
 
