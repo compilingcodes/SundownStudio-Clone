@@ -26,3 +26,18 @@ elems.forEach(function(e){
     })
 })
 
+
+// Swiper JS
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 30,
+    
+  });
+
+
+//   Responsive Menu Drop Doen Js code
+
+var menu=document.querySelector("#top-menu");
