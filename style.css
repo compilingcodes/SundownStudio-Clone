@@ -682,11 +682,33 @@ justify-content: center;
 #full-scr{
     height: 100vh;
     width: 100%;
-    background-color: #504a45fe;
+    background-color: #6f6b67fe;
     z-index: 9;
-    transition: all ease-in .8s;
+    transition: all ease-in .4s;
     position: fixed;
     top: -100%;
+}
+
+#full-p1{
+width: 100%;
+height: 40vh;
+background-color:#EEE9E2;
+border-bottom-left-radius: 8%;
+border-bottom-right-radius:8% ;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: end;
+text-align: right;
+
+}
+
+#full-p1h{
+margin-right: 10vw;
+font-size: 5vw;
+line-height: 10.5vw;
+margin-bottom: 5.5vw;
+
 }
 
 /*  Responsive Making*/
@@ -706,6 +728,8 @@ justify-content: center;
         justify-content: space-between;
         align-items: center;
         gap: 10px;
+        background-color: #EEE9E2;
+        
     }
 
     #navp2 {
@@ -725,6 +749,7 @@ justify-content: center;
         border: 2px solid rgba(47, 39, 39, 0.135);
         padding: 1vw 2.5vw;
         border-radius: 5vw;
+        z-index: 1000;
     }
 
     #top-menu h3 {

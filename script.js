@@ -41,3 +41,22 @@ var swiper = new Swiper(".mySwiper", {
 //   Responsive Menu Drop Doen Js code
 
 var menu=document.querySelector("#top-menu");
+var menuh3=document.querySelector("#top-menu h3");
+var full=document.querySelector("#full-scr");
+var navimg=document.querySelector("nav img");
+var flag=0;
+
+menu.addEventListener("click", function(){
+if(flag==0){
+    full.style.top=0;
+    navimg.style.opacity=0;
+    flag=1;
+}
+else{
+    full.style.top="-100%";
+    navimg.style.opacity=1;
+    flag=0;
+}
+   
+
+})
