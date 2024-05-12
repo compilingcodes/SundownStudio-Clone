@@ -18,7 +18,7 @@ body {
 
 #main {
     position: relative;
-  z-index: 10; 
+    z-index: 11;
 }
 
 /* Page 1 Styling */
@@ -652,92 +652,180 @@ video {
 
 /* Page6 styling */
 
-#page6{
-    height: 130vh;
+#page6 {
+    height: 115vh;
     width: 100%;
+    position: relative;
 }
+
+#page7 {
+    height: 12vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+
 
 /* Footer Styling */
 
-#footer{
-display: flex;
-position: fixed;
-bottom: 0;
-height: 105vh;
-width: 100%;
-z-index: 9;
-background-color: black;
-align-items: center;
-flex-direction: column;
-padding-top: 4.5vw;
+#footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 115vh;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw 2.3vw;
+    padding-bottom: 0vw;
+}
+
+#footer-end {
+    height: 15vh;
+    width: 100%;
+    background-color: #EEE9E2;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+}
+
+#footer #footer-top {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9vw;
 
 }
 
-
-
-#footer #footer-top{
-height: 20vh;
-width: 100%;
-display: flex;
-justify-content: space-between;
-
+#footer #footer-top #top-h {
+    margin-left: 3.5vw;
 }
 
-#footer #footer-top #top-h{
-   margin-left: 7vw;
-}
-
-#footer #footer-top #top-h h3{
+#footer #footer-top #top-h h3 {
     font-size: 2.2vw;
-    line-height: 2.8vw;
-color: white;
+    line-height: 3vw;
+    color: white;
 }
 
-#footer #footer-top #top-h h3:hover{
- cursor: pointer;
+#footer #footer-top #top-h h3:hover {
+    cursor: pointer;
 
 }
 
 #footer #footer-top #top-p {
     margin-right: 5vw;
-width: 22vw;
-line-height: 1.7vw;
-
-    }
-
-#footer #footer-top #top-p p{
-
-color: white;
+    width: 25vw;
+    line-height: 1.7vw;
 
 }
 
+#footer #footer-top #top-p p {
+    color: white;
 
-#footer #main-h h1{
-  
+}
+
+#footer #footer-top #top-pright #top-email {
+    margin-top: 3vw;
+    width: 100%;
+}
+
+
+#footer #main-h h1 {
+    padding-top: 7.4vw;
     color: rgb(255, 255, 255);
-    font-size:22.5vw ;
- 
- 
-    margin-top: 5vw;
+    font-size: 23.5vw;
+    line-height: 20vw;
+
 }
 
-#footer-bottom{
-    height: 6vh;
+#footer-bottom {
+    height: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     bottom: 0;
-       border-top: 1px solid #504A45; 
-    }
-#footer-bottom h4{
+    padding: 2vw 0vw;
+
+    border-top: 1px solid #504A45;
+}
+
+#footer-bottom h4 {
     color: white;
-    }
-#footer-bottom h4 img{
+}
+
+#footer-bottom h4 img {
     width: 10px;
     height: 10px;
-    }
+}
+
+/* Footer Animation */
+
+#footerani {
+    position: absolute;
+    width: 120%;
+    height: 35vh;
+    top: -10vh;
+    left: -5vw;
+
+
+}
+
+#footerani1 {
+    position: absolute;
+    width: 60vw;
+    height: 50vh;
+    border-radius: 10%;
+
+    border-bottom-right-radius: 70%;
     
 
+    background-color: #fe340b;
+    filter: blur(20px);
+    animation-name: footeranime1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+#footerani2 {
+    position: absolute;
+    width: 60%;
+    height: 46vh;
+    border-radius: 50%;
+    background-color: #fe340b;
+    right: 0;
+    filter: blur(20px);
+    animation-name: footeranime2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes footeranime1 {
+    from {
+        transform: translate(-10%,0)skew(30deg);
+    }
+
+    to {
+        transform: translate(20%,10%)skew(10deg);
+    }
+}
+
+@keyframes footeranime2 {
+    from {
+        transform: translate();
+    }
+
+    to {
+        transform: translate();
+    }
+}
 
 /* Full Screen Styling */
 
@@ -749,7 +837,7 @@ color: white;
     transition: all ease-in .6s;
     position: fixed;
     top: -100%;
-    opacity:.6;
+    opacity: .6;
 
 
 }
@@ -765,7 +853,7 @@ color: white;
     justify-content: flex-end;
     align-items: end;
     text-align: right;
- 
+
 
 }
 
