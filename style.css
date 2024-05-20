@@ -982,11 +982,11 @@ video {
 /* Page 2 Styling */
 
     #page2 {
-        min-height: 100vh;
+        min-height: 120vh;
         width: 100%;
         position: relative;
         background-color: #EFEAE3;
-        padding-top: 1vh;
+        padding-top: 6vh;
      
     }
     
@@ -1024,7 +1024,7 @@ video {
     }
     
     .cont h1 {
-        font-size: 8vh;
+        font-size: 9vh;
         display: inline-block;
     }
 
@@ -1037,7 +1037,7 @@ video {
     display: flex;
 
     flex-direction: column;
-    /* padding: 4vw; */
+   padding-top: 5vw;
 }
 
 #bottom-text {
@@ -1057,12 +1057,12 @@ video {
     z-index: 9;
     position: absolute;
     left: 6vw;
-    top: 70vw;
+    top: 80vw;
 }
 
 #bottom-image p {
     font-weight: 200;
-    margin-top: 5vw;
+    margin-top: 9vw;
 }
 
 #bottom-image img {
@@ -1111,6 +1111,123 @@ bottom:0;
 #page2-footer p {
     font-size: 2vw;
 margin-left: .7vw;
+}
+
+/* Page 3 styling */
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+ background-color: #EFEAE3;
+padding-top: 20vw;
+    /* display: flex; */
+
+}
+
+.elem {
+    height: 9vw;
+    width: 100%;
+    padding-top: 3vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(70, 57, 57);
+    overflow: hidden;
+}
+
+.elem h2 {
+    color: black;
+    font-size: 4vw;
+    padding-left: 1.5vw;
+    z-index: 9;
+}
+
+.elem .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+    position: absolute;
+    top: -100%;
+
+
+    transition: all ease .3s;
+}
+
+.elem:hover .overlay {
+    top: 0%;
+
+}
+
+/* Floating Image Styling */
+
+#fixed-image {
+    height: 65%;
+    width: 23%;
+    background-color: red;
+    position: fixed;
+    z-index: 99;
+    top: 17%;
+    left: 52%;
+    border-radius: 7%;
+    display: none;
+    background-position: center;
+    background-size: cover;
+}
+
+.data-image {
+    display: block;
+}
+
+
+/* All  projects Small Menu */
+
+#menu {
+    padding-top: 5vw;
+    display: flex;
+
+}
+
+#menu a {
+    text-decoration: none;
+    border: 1px solid #BFBBB6;
+    border-radius: 50px;
+    margin-left: 4vw;
+    padding: 1vw 2vw;
+
+    position: relative;
+    overflow: hidden;
+}
+
+#menu h4 {
+    color: black;
+    font-weight: 100;
+
+}
+
+#menu a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    left: 0;
+    bottom: -100%;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+
+}
+
+#menu a:hover::after {
+    left: 0;
+    bottom: 0;
+
+}
+
+#menu a:hover h4 {
+
+    color: white;
+    position: relative;
+    z-index: 9;
 }
 
 
@@ -1263,6 +1380,123 @@ width: 80%;
 }
 
 
+/* Page6 styling */
 
+#page6 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+
+
+/* Footer Styling */
+
+#footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 120vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: black;
+    align-items: center;
+    flex-direction:column;
+    padding-left:  5.3vw;
+    padding-top: 21.5vw;
+ 
+}
+
+#footer-end {
+    height: 7vh;
+    width: 100%;
+    background-color: #EEE9E2;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+}
+
+#footer #footer-top {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+gap: 5vw;
+    margin-top: 9vw;
+
+}
+
+#footer #footer-top #top-h {
+    margin-left: 1.5vw;
+}
+
+#footer #footer-top #top-h h3 {
+    font-size: 7vw;
+    line-height: 10vw;
+    color: white;
+}
+
+#footer #footer-top #top-h h3:hover {
+    cursor: pointer;
+
+}
+
+#footer #footer-top #top-p {
+  width: 100%;
+    line-height: 4vw;
+}
+
+#footer #footer-top #top-p p {
+    color: white;
+font-size: 120%;
+}
+
+
+
+
+#footer #main-h {
+   width: 100%;
+margin-top: 52vw;
+}
+
+#footer #main-h h1 {
+    padding-top: 7.4vw;
+
+    color: rgb(255, 255, 255);
+    font-size: 22.5vw;
+    line-height: 18vw;
+
+}
+
+#footer-bottom {
+    height: 10vh;
+    width: 100%;
+    
+    display: flex;
+    /* justify-content: space-between; */
+   
+    bottom: 0;
+    padding: 2vw 0vw;
+    border-top: 1px solid #504A45;
+margin-top: 12vw;
+
+}
+
+#footer-bottom h4 {
+    color: white;
+    font-size: 85%;
+}
+
+#footer-bottom h4 img {
+    width: 10px;
+    height: 10px;
+}
+
+#footer #footer-top #top-pright #top-email {
+    margin-top: 6vw;
+    width: 100%;
+    text-decoration: underline;
+}
 
 }
