@@ -1,9 +1,13 @@
 // Locomotive Smooth Scroll Js Code
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
+// const { setTimeout } = require("timers/promises");
+
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#main'),
+//     smooth: true
+// });
+
+
 
 // Making floating Image using Java Script(JS)
 
@@ -57,6 +61,15 @@ else{
     navimg.style.opacity=1;
     flag=0;
 }
-   
 
 })
+
+// Loader JS
+
+ var loader=document.querySelector("#loader");
+
+setTimeout(function() {
+    console.log('Hello');
+    
+    loader.style.top="-100%";
+}, 3000);
